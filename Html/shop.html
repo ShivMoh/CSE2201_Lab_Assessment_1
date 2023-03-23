@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shop - Dessert Shop</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- add any necessary stylesheets and scripts here -->
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sorting options and category filters -->
+    <section id="filters">
+        <h2>Shop</h2>
+        <div>
+            <label for="sort-by">Sort by:</label>
+            <select id="sort-by" name="sort-by">
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="name-asc">Name: A to Z</option>
+                <option value="name-desc">Name: Z to A</option>
+            </select>
+        </div>
+        <div>
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="all">All</option>
+                <option value="cakes">Cakes</option>
+                <option value="cookies">Cookies</option>
+                <option value="cupcakes">Cupcakes</option>
+                <!-- add any additional categories as needed -->
+            </select>
+        </div>
+    </section>
+
+    <!-- Grid layout of products -->
+    <section id="products">
+        <div class="product">
+            <a href="#"><img src="path/to/image.jpg" alt="Product image"></a>
+            <h3><a href="#">Product name</a></h3>
+            <p class="price">$500</p>
+        </div>
+        <!-- repeat the above "product" div as needed to create the grid layout -->
+    </section>
+
+    <!-- Navigation buttons for different product pages -->
+    <section id="pagination">
+        <button id="prev-page">Previous</button>
+        <button id="next-page">Next</button>
+    </section>
+
+    <!-- Footer with business's address, social media links, etc. -->
+    <footer>
+        <p id="address">123 Main Street, Anytown USA</p>
+        <p id="phone">Phone: 123-456-7890</p>
+        <p id="email">Email: info@dessert-shop.com</p>
+        <!-- add any necessary social media links and icons here -->
+    </footer>
+</body>
+
+</html>
