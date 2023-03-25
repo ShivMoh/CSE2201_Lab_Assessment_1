@@ -5,66 +5,103 @@
     <title>Shop - Dessert Shop</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- add any necessary stylesheets and scripts here -->
+    <link rel="stylesheet" href="../CSS/shop.css">
 </head>
 
 <body>
     <!-- Navigation bar -->
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+    <header>
+        <img src="../Resources/Images/image 39.png" alt="">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Sorting options and category filters -->
-    <section id="filters">
-        <h2>Shop</h2>
-        <div>
-            <label for="sort-by">Sort by:</label>
-            <select id="sort-by" name="sort-by">
-                <option value="price-asc">Price: Low to High</option>
-                <option value="price-desc">Price: High to Low</option>
-                <option value="name-asc">Name: A to Z</option>
-                <option value="name-desc">Name: Z to A</option>
-            </select>
-        </div>
-        <div>
-            <label for="category">Category:</label>
-            <select id="category" name="category">
-                <option value="all">All</option>
-                <option value="cakes">Cakes</option>
-                <option value="cookies">Cookies</option>
-                <option value="cupcakes">Cupcakes</option>
-                <!-- add any additional categories as needed -->
-            </select>
-        </div>
-    </section>
+    <main>
+        <section class="banner">
+            <h1>Shop</h1>
+        </section>
 
-    <!-- Grid layout of products -->
-    <section id="products">
-        <div class="product">
-            <a href="#"><img src="path/to/image.jpg" alt="Product image"></a>
-            <h3><a href="#">Product name</a></h3>
-            <p class="price">$500</p>
-        </div>
-        <!-- repeat the above "product" div as needed to create the grid layout -->
-    </section>
+        <!-- Sorting options and category filters -->
+        <section id="filters">
+            <div class="filter-div"">
+                <label for="sort-by">Sort by:</label>
+                <select id="sort-by" name="sort-by">
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="name-asc">Name: A to Z</option>
+                    <option value="name-desc">Name: Z to A</option>
+                </select>
+            </div>
+            <div class="filter-div">
+                <label for="category">Category:</label>
+                <select id="category" name="category">
+                    <option value="all">All</option>
+                    <option value="cakes">Cakes</option>
+                    <option value="cookies">Cookies</option>
+                    <option value="cupcakes">Cupcakes</option>
+                    <!-- add any additional categories as needed -->
+                </select>
+            </div>
+        </section>
 
-    <!-- Navigation buttons for different product pages -->
-    <section id="pagination">
-        <button id="prev-page">Previous</button>
-        <button id="next-page">Next</button>
-    </section>
+        <!-- Grid layout of products -->
+        <section class="products">
+            <div class="product">
+                <img src="../Resources/Images/product1.png" alt="Product 1">
+                <p>$1000</p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+            <!-- repeat the above "product" div as needed to create the grid layout -->
+
+            <div class="product">
+                <img src="../Resources/Images/product2.png" alt="Product 2">
+                <p>$1000</p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+
+            <div class="product">
+                <img src="../Resources/Images/product3.png" alt="Product 3">
+                <p>$1000</p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+        </section>
+
+        <!-- Navigation buttons for different product pages -->
+        <section id="pagination">
+            <button id="prev-page">Previous</button>
+            <button id="next-page">Next</button>
+        </section>
+    </main>
 
     <!-- Footer with business's address, social media links, etc. -->
     <footer>
-        <p id="address">123 Main Street, Anytown USA</p>
-        <p id="phone">Phone: 123-456-7890</p>
-        <p id="email">Email: info@dessert-shop.com</p>
-        <!-- add any necessary social media links and icons here -->
-    </footer>
-</body>
+		<div class="footer-column">
+		    <h3>Shop</h3>
+		    <ul>
+			    <li><a href="#">Whats New</a></li>
+			    <li><a href="#">Popular</a></li>
+		    </ul>
+		</div>
 
+		<div class="footer-column">
+		    <h3>Categories</h3>
+		    <ul>
+			    <li><a href="#">Sales</a></li>
+			    <li><a href="#">Popular</a></li>
+		    </ul>
+		</div>
+
+		<div class="footer-column">
+		    <h3>Contact Us</h3>
+		    <ul>
+			    <li><a href="#">Leave us a message</a></li>
+		    </ul>
+		</div>
+	  </footer>
+</body>
 </html>
