@@ -1,84 +1,40 @@
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
 
-body {
-	font-family: Arial, sans-serif;
-	color: #333
-}
-
-/*header styles*/
 header {
-	position: relative;
-	background-color: #8c877e;
-	padding: 0%;
-	height: 80px;
-	width: auto;
+	height: 40em;
+	left: 0;
+	margin-bottom: 5em;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto auto;
+  
 }
 
-header img{	
-	height: 150px;
-	margin: 0 auto;
-	display: block;
-}
-
-header nav{
-	position: absolute;
-	bottom: 0;
-	width: auto;
-}
-
-nav ul {
-	list-style: none;
-	display: flex;
-	width: auto;
-}
-
-nav li {
-	padding: 30px;
-	width: auto;
-}
-
-nav a {
-	color: #333;
-	font-family: 'Times New Roman', Times, serif;
-	text-decoration: none;
-	font-size: 28px;
-	font-weight: 600;
-	width: auto;
-}
-
-nav a:hover{
-	color: #555;
-}
-
-.banner {
-	background-image: url("bannerimage.jpg.avif");
-	background-size: cover;
+#hero {
+	height: 40em;
+	width: 100%;
+	background-image: url('../Resources/Images/cakesTables.jpeg');
+	background-repeat: no-repeat;
 	background-position: center;
-	display: flex;
-	height: 500px;
-	flex-direction: column;
-	align-items: center stretch;
+	background-size: cover;
+	display: grid;
 	justify-content: center;
+}
+
+#page-title {
+	font-size: 10em;
+	color: rgb(0, 0, 0);
+	position: relative;
+	top: 0.2em;
+}
+
+#page-location {
+	color: rgb(0, 0, 0);
+	font-size: large;
+	font-weight: 600;
 	text-align: center;
-	color: #fff;
-}
-
-.banner h1 {
-	font-family: 'Times New Roman', Times, serif;
-	font-size: 200px;
-	opacity: 60%;
-	margin-bottom: 10px;
-    color: black;
-}
-
-.banner p {
-	font-size: 18px;
-	margin-bottom: 20px;
-}
+	position: relative;
+	top: -10em;
+} 
 
 .btn:hover {
 	background-color: #555;

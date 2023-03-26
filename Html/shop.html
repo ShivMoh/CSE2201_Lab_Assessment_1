@@ -51,28 +51,36 @@
         transform: scale(1.01);
     }
 
+    .navigation-bar {
+        grid-area: 1/1/2/2;
+    }
+    
 </style>
 <body>
-    <!-- Navigation bar -->
     <header>
-        <img src="../Resources/Images/image 39.png" alt="">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+        <div id="hero">
+            <p id="page-title">Shop</p>
+            <p id="page-location">Home > Shop</p>
+        </div>
+        <nav class="navigation-bar">
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="logo">
+                <img src="../Resources/Images/logo.png" alt="Cakes R Us logo">
+            </div>
+            <div class="menu">
+                <a href="#">Services</a>
+                <a href="#">Products</a>
+                <a href="#">Blog</a>
+            </div>
         </nav>
        
     </header>
 
-    <section class="banner">
-        <!-- <img src="../Resources/Images/cakesTables.jpeg" alt="cakes"> -->
-    </section>
-
     <main>
-   
-
         <!-- Sorting options and category filters -->
         <section id="filters">
             <div class="filter-div">
