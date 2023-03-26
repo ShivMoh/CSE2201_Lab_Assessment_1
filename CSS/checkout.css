@@ -1,0 +1,74 @@
+#checkout {
+    background-color: #ffffff;
+    margin: 0px auto;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+input {
+    height: 5%;
+    margin-top: 3px;
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+    border-radius: 0.5em;
+}
+
+input.invalid {
+    background-color: #ffdddd;
+}
+
+.tab {
+    display: none;
+    width: 30%;
+    margin: 0px auto;
+}
+
+#prevBtn, #nextBtn {
+    width: 120px;
+    height: 30px;
+    background-color: #29D53A;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#prevBtn:hover, #nextBtn:hover {
+
+    background-color: #4abb55;
+    transform: scale(1.02);
+    color: white;
+}
+  
+#progress-bar {
+  width: 33%;
+  height: 35px;
+  background-color: #4abb55;
+  text-align: center;
+  line-height: 32px;
+  color: black;
+  border-radius: 1em;
+  height: 1.5em;
+  text-align: center;
+}
+
+#progress-status {
+    width: 30%;
+    margin: 0px auto;
+    background-color: #d31f1f;
+    border-radius: 1em;
+    height: 1.5em;
+}
+
+#form-title {
+    width: 30%;
+    margin: 0px auto;
+    font-size: 2em;
+    text-align: center;
+    padding: 2% 0 1% 0;
+}

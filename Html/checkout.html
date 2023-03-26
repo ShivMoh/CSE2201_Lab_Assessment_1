@@ -1,0 +1,146 @@
+<!-- needs visual work, was mostly focusing on functionality, might also just add the cart itself to this page, don't know yet -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet"> -->
+    
+    <link rel="stylesheet" href="../CSS/checkout.css">
+</head>
+<style>
+    #card {
+        width: 4em;
+        height: 4em;
+        padding: 0.5em;
+    }
+
+    #card:hover {
+        transform: scale(1.1);
+    }
+
+    #payment-details, #shipping-details {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+        justify-content: center;
+        column-gap: 20%;
+    }
+
+    #divider {
+        border-bottom: solid #3f3d3d 1px;
+        padding: 3%;
+    }
+</style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="form-title">Shipping</div>
+    <div id="progress-status">
+        <div id="progress-bar"></div>
+    </div>
+   
+    <form id="checkout">
+
+     
+
+        <div class="tab">
+            <!-- <p>Please Input your credit card information: </p> -->
+            <div style="display: flex; flex-direction: row; padding:1em 0 1em 0;">
+                <img id = "card" src="../Resources/Icons/credit-card.png" alt="Master Card">
+                <img id = "card" src="../Resources/Icons/visa.png" alt="Visa">
+                <img id = "card" src="../Resources/Icons/american-express.png" alt="American Express">
+                <img id = "card" src="../Resources/Icons/discover.png" alt="Disover">
+            </div>
+            <p>Card Holder Name*: <input type="text" name="cardHolderName" placeholder="e.g John Doe"></p>
+            <p>Card Number*: <input type="text" name="cardNumber" placeholder="2342 2424 2424 4244"></p>
+            <p>Security Pin: <input type="password" inputmode = "numeric" name="securityNumber" placeholder="xxxx"></p>
+            <p>Expirary Date*: <input type="text" inputmode = "numeric" name="expiraryDate" placeholder="yy/mm/dd"></p>
+        </div>
+
+        <div class="tab">
+            <p>Full Name*: <input type="text" name="full-name" placeholder="full name" id="full-name" ></p>
+            <p>Email*: <input type="text" name="email" placeholder="email" id="email" ></p>
+            <p>Phone Number (Optional): <input type="number" name="phone=number" placeholder="phone number" id="phone-number"></p>
+            <p>Address Line 1*: <input type="text" name="address-line-1" placeholder="Address Line 1" id="address-line-1"></p>
+            <p>Address Line 2*: <input type="text" name="address-line-2" placeholder="Address Line 2" id="address-line-2"></p>
+            <p>Town/Village (Optional): <input type="text" name="address-line-2" placeholder="Town/Village"></p>
+            <p>Region: <input list="regions" type="text" inputmode="numeric" name="number" placeholder="Number"></p>
+            <datalist id="regions">
+                <option value="1: Barima-Waini">
+                <option value="2: Pomeroon-Supenaam">
+                <option value="3: Essequibo Islands-West Demerara">
+                <option value="4: Demerara-Mahaica">
+                <option value="5: Mahaica-Berbice">
+                <option value="6: East Berbice-Corentyne">
+                <option value="7: Cuyuni-Mazaruni">
+                <option value="8: Potaro-Siparuni">
+                <option value="9: Upper Takutu-Upper Essequibo">
+                <option value="10: Upper Demerara-Berbice">
+            </datalist>
+        </div>
+
+        <div class="tab" style="width: 50%;">
+            <div>Cart</div>
+            <div id="cart-items">
+                This is where the items will go
+            </div>
+            <div id="divider"></div>
+            <div>
+                <p style="text-align: center; margin-top: 4%;">Edit Cart</p>
+            </div>
+            <div id="divider" style="padding-top: 0%;"></div>
+            <div id="payment-details">
+                <h3 style="grid-area: auto; display: flex; flex-direction: column; align-items: center;">Payment details
+                    <p>Change</p>
+                </h3>
+                <h3 style="grid-area: auto; grid-area: auto; display: flex; flex-direction: column; align-items: center;"">
+                    Pay in full with:
+                    <p>Lorem Epsum</p>
+                </h3>
+                <h3 style="grid-area: auto; grid-area: auto; display: flex; flex-direction: column; align-items: center;"">
+                    Payee
+                    <p>Lorem Ipsum</p>
+                </h3>
+            </div>
+            <div id="divider"></div>
+            <div id="shipping-details">
+                <h3 style="grid-area: auto; display: flex; flex-direction: column; align-items: center;">Payment details
+                    <p>Change</p>
+                </h3>
+                <h3 style="grid-area: auto; grid-area: auto; display: flex; flex-direction: column; align-items: center;"">
+                    Pay in full with:
+                    <p>Lorem Epsum</p>
+                </h3>
+                <h3 style="grid-area: auto; grid-area: auto; display: flex; flex-direction: column; align-items: center;"">
+                    Payee
+                    <p>Lorem Ipsum</p>
+                </h3>
+            </div>
+            <div id="divider"></div>
+        </div>
+        
+        <div style="overflow:auto;">
+            <div style="display: flex; flex-direction:row; justify-content: center;">
+              <button type="button" id="prevBtn" onclick="showTab(-1)">Previous</button>
+              <button type="button" id="nextBtn" onclick="showTab(1)">Next</button>
+            </div>
+        </div>
+
+
+     
+    </form>
+    <script src="../Javascript/checkout.js" defer></script>
+</body>
+</html>
