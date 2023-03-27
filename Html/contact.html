@@ -86,5 +86,17 @@
 		  </ul>
 		</div>
 	  </footer> -->
+    <script>
+      const contactForm = document.getElementById('contact-form');
+  
+      contactForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+  
+        if (contactForm.checkValidity()) {
+          alert('Submitted successfully');
+          contactForm.reset();
+        }
+      });
+    </script>
 </body>
 </html>
