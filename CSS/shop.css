@@ -1,4 +1,3 @@
-
 header {
 	height: 40em;
 	left: 0;
@@ -6,7 +5,6 @@ header {
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-rows: auto auto auto;
-  
 }
 
 #hero {
@@ -43,7 +41,7 @@ header {
 /*product styles*/
 .products {
 	display: grid;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: auto auto auto;
 	margin: 3em 10em 0 10em;
 	justify-content: center;
@@ -63,6 +61,8 @@ header {
 .product img {
 	max-width: 100%;
 	height: 300px;
+	width: 300px;
+	object-fit: cover;
 	margin-bottom: 20px;
 	border-radius: 10%;
 }
