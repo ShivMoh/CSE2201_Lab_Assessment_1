@@ -9,7 +9,7 @@ input {
     border-radius: 0.5em;
 }
 
-.btn {
+button {
 	background-color: #333;
 	color: #fff;
 	padding: 10px 20px;
