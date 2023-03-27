@@ -1,0 +1,29 @@
+#divider {
+    border-bottom: solid #3f3d3d 1px;
+    padding: 3%;
+}
+
+.cart-item  img {
+    width: 20em;
+    height: 20em;
+    background-color: red;
+    border-radius: 3em;
+}
+
+.cart-item {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 2em auto;
+    column-gap: 20em;
+    margin-bottom: 1em;
+    background-color: #e4d7e2;
+    border-radius: 5em;
+    padding: 3em;
+}
+
+select {
+    width: 50px;
+    border-radius: 0.5em;
+    font-size: medium;
+    border: solid grey 1px;
+}

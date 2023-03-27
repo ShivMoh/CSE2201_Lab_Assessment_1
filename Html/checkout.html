@@ -11,7 +11,8 @@
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet"> -->
-    
+    <link rel="stylesheet" href="../CSS/globalStyles.css">
+    <link rel="stylesheet" href="../CSS/cart.css">
     <link rel="stylesheet" href="../CSS/checkout.css">
 </head>
 <style>
@@ -34,26 +35,169 @@
     }
 
     #divider {
-        border-bottom: solid #3f3d3d 1px;
+        border-bottom: solid #000000 5px;
+        margin-bottom: 2%;
+        margin-top: -5%;
         padding: 3%;
+        width: 15%;
     }
+
+    #cart-items {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #checkout-item {
+        width: 20em; 
+        margin: 0; 
+        position: relative; 
+        top: 13em;
+        display: none;
+    }
+
+    
+    #cart-details-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5em;
+        /* border: solid black 2px; */
+    }
+
+    #cart-details {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     
+        /* border: solid black 2px; */
+    }
+
+    #cart-details p {
+        font-size: 50px;
+        margin-bottom: 0.4em;
+    }
+
+    #checkout-btn {
+        width: 30%;
+        height: 3em;
+    }
+
+    #cart-items-title {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 50px;
+        font-weight: 300;
+    }
+
 </style>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <div id="form-title">Shipping</div>
-    <div id="progress-status">
-        <div id="progress-bar"></div>
+    <header>
+        <div id="hero">
+            <p id="page-title">Cart</p>
+            <p id="page-location">Home > Cart</p>
+        </div>
+        <nav class="navigation-bar">
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="logo">
+                <img src="../Resources/Images/logo.png" alt="Cakes R Us logo">
+            </div>
+            <div class="menu">
+                <a href="#">Services</a>
+                <a href="#">Products</a>
+                <a href="#">Blog</a>
+            </div>
+        </nav>
+       
+    </header>
+   
+
+    <div id="cart">
+      
+        <p id="cart-items-title">Cart Items</p>
+        <div id="cart-items">
+            <div class="cart-item">
+                <img  src="../Resources/Images/product2.png" alt="">
+                <div id="item-details" style="grid-area: auto;">
+                    <img id="exit" src="../Resources/Icons/cross.png" alt="exit" style="width: 20px; height: 20px; margin-left: 90%;">
+                    <h2 style="margin-top: -20px;">$5200</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. id.</p>
+                    <p>QTY:      
+                        <select style="margin-left: 20px" title="quantity" name="quantity" id="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">Custom Input</option>
+                        </select>  
+                    </p>
+                    <button id="checkout-item">Proceed Item to Checkout</button>
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <img  src="../Resources/Images/product2.png" alt="Christinnnaaaaa">
+                <div id="item-details" style="grid-area: auto;">
+                    <img id="exit" src="../Resources/Icons/cross.png" alt="exit" style="width: 20px; height: 20px; margin-left: 90%;">
+                    <h2 style="margin-top: -20px;">$5200</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. id.</p>
+                    <p>QTY:      
+                        <select style="margin-left: 20px" title="quantity" name="quantity" id="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">Custom Input</option>
+                        </select>  
+                    </p>
+                    <button id="checkout-item">Proceed Item to Checkout</button>
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <img  src="../Resources/Images/product2.png" alt="Christinnnaaaaa">
+                <div id="item-details" style="grid-area: auto;">
+                    <img id="exit" src="../Resources/Icons/cross.png" alt="exit" style="width: 20px; height: 20px; margin-left: 90%;">
+                    <h2 style="margin-top: -20px;">$5200</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. id.</p>
+                    <p>QTY:      
+                        <select style="margin-left: 20px" title="quantity" name="quantity" id="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">Custom Input</option>
+                        </select>  
+                    </p>
+                    <button id="checkout-item">Proceed Item to Checkout</button>
+                </div>
+            </div>
+
+        </div>
+          <div id="cart-details-container">
+            <div id="cart-details">
+                <p style="grid-column: span 2;">Total: $xxxx </p>
+            </div>
+            <button id="checkout-btn" type="button" onclick="cartCheckoutTransition(0)">Proceed to checkout</button>
+            </div>
     </div>
    
     <form id="checkout">
-
-     
+        <div id="form-title">Shipping</div>
+        <div id="progress-status">
+            <div id="progress-bar"></div>
+        </div>
 
         <div class="tab">
             <!-- <p>Please Input your credit card information: </p> -->
@@ -133,6 +277,7 @@
         
         <div style="overflow:auto;">
             <div style="display: flex; flex-direction:row; justify-content: center;">
+                <button type="button" id="back-to-cart" onclick="cartCheckoutTransition(1)">Back To Cart</button>
               <button type="button" id="prevBtn" onclick="showTab(-1)">Previous</button>
               <button type="button" id="nextBtn" onclick="showTab(1)">Next</button>
             </div>

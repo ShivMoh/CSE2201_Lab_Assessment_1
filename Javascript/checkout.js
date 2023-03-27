@@ -1,4 +1,21 @@
 var x = document.getElementsByClassName("tab");
+// var backToCartBtn = document.getElementById("back-to-cart")
+
+var currentTab = 0; // Current tab is set to be the first tab (0)
+showTab(0); // Display the current tab
+cartCheckoutTransition(1);
+
+function cartCheckoutTransition(i) {
+
+  if(i == 1) {
+    document.getElementById("checkout").style.display = "none"
+    document.getElementById("cart").style.display = "block"
+  } else {
+    document.getElementById("checkout").style.display = "block"
+    document.getElementById("cart").style.display = "none"
+  }
+
+}
 
 function update(n) {
     //get dom element
@@ -23,40 +40,28 @@ function update(n) {
     }
   }
 
-var currentTab = 0; // Current tab is set to be the first tab (0)
-showTab(0); // Display the current tab
+
   
 function showTab(n) {
     // This function will display the specified tab of the form ...
     if(n==0) {
         x[currentTab].style.display = "block"
     } else if(currentTab < (x.length - 1) || n < 0) {
-        if(!validateForm(n)) return
+        // if(!validateForm(n)) return
         x[currentTab].style.display = "none"
         currentTab+=n;
         x[currentTab].style.display = "block";
     } else {
         return;
     }
-   
-    console.log(currentTab)
+
     // ... and fix the Previous/Next buttons:
     if (currentTab == 0) {
-        console.log("Me work?")
-        var button = document.getElementById("prevBtn")
-        button.innerHTML = "Back To Cart"
-        // button.onclick = () => {
-        //     window.location.href="./cart.html"
-        // }
-        // button.addEventListener('click', () => {
-        //     console.log("Event called")
-        //     window.location.href="./cart.html"
-        // })
+      document.getElementById("prevBtn").style.display = "none"
+      document.getElementById("back-to-cart").style.display = "inline"
     } else {
-      var button = document.getElementById("prevBtn")
-      button.innerHTML = "Previous"
-    //   button.removeEventListener('click')
-    //   button.removeAttribute('onclick'
+      var button = document.getElementById("prevBtn").style.display = "inline"
+      document.getElementById("back-to-cart").style.display = "none"
     } 
 
     if (currentTab == (x.length - 1)) {
@@ -68,7 +73,6 @@ function showTab(n) {
     update(n)
     titleChange(currentTab)
 
-    
   }
 
 function titleChange(currentTab) 

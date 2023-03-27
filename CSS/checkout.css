@@ -1,4 +1,8 @@
+#cart {
+    display: none;
+}
 #checkout {
+    display: none;
     background-color: #ffffff;
     margin: 0px auto;
 }
@@ -29,7 +33,7 @@ input.invalid {
     margin: 0px auto;
 }
 
-#prevBtn, #nextBtn {
+button {
     width: 120px;
     height: 30px;
     background-color: #29D53A;

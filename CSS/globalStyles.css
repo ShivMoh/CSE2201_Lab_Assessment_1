@@ -110,3 +110,41 @@ input {
     padding: 50%;
   }
   }
+
+
+  header {
+	height: 40em;
+	left: 0;
+	margin-bottom: 5em;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto auto;
+  
+}
+
+#hero {
+	height: 40em;
+	width: 100%;
+	background-image: url('../Resources/Images/cakesTables.jpeg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: grid;
+	justify-content: center;
+}
+
+#page-title {
+	font-size: 10em;
+	color: rgb(0, 0, 0);
+	position: relative;
+	top: 0.2em;
+}
+
+#page-location {
+	color: rgb(0, 0, 0);
+	font-size: large;
+	font-weight: 600;
+	text-align: center;
+	position: relative;
+	top: -10em;
+} 
