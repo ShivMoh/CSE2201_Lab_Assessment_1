@@ -109,36 +109,7 @@ select {
   width: 100px;
 }
 
-/*footer styles*/
-footer {
-	background-color: #CD4274;
-	text-align: center;
-	position: static;
-	display: flex;
-	bottom: 0;
-	width: 100%;
-}
 
-.footer-column ul{
-	list-style: none;
-}
 
-.footer-column{
-	width: 33.33%;
-	padding: 20px;
-	box-sizing: border-box;
-	text-align: center;
-}
 
-.footer-column h3{
-	color: #d9d9d9;
 
-}
-
-.footer-column a{
-	color: #fff;
-	padding-top: 40px;
-	display: block;
-	text-align: center;
-	text-decoration: none;
-}
