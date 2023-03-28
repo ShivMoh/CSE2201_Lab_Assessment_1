@@ -1,5 +1,4 @@
 var x = document.getElementsByClassName("tab");
-// var backToCartBtn = document.getElementById("back-to-cart")
 
 var currentTab = 0; // Current tab is set to be the first tab (0)
 showTab(0); // Display the current tab
@@ -47,7 +46,7 @@ function showTab(n) {
     if(n==0) {
         x[currentTab].style.display = "block"
     } else if(currentTab < (x.length - 1) || n < 0) {
-        // if(!validateForm(n)) return
+        if(!validateForm(n)) return
         x[currentTab].style.display = "none"
         currentTab+=n;
         x[currentTab].style.display = "block";
@@ -75,6 +74,7 @@ function showTab(n) {
 
   }
 
+// changes displayed title of the checkout form
 function titleChange(currentTab) 
 {
     sectionTitle = document.getElementById("form-title")
@@ -83,15 +83,14 @@ function titleChange(currentTab)
     sectionTitle.innerHTML = titles[currentTab]
 }
 
+// validates form by checking that required fields are inputted before proceeding
 function validateForm(n) {
-     // This function deals with validation of the form fields
     var x, y, i, valid = true;
     x = document.getElementsByClassName("tab");
     y = x[currentTab].getElementsByTagName("p");
 
     if(n < 0) return valid
    
-    console.log(y[0].children[0])
     // A loop that checks every input field in the current tab:
     for (i = 0; i < y.length; i++) {
       // If a field is empty...
