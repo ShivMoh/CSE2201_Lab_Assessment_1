@@ -138,10 +138,30 @@
         <p id="cart-items-title">Cart Items</p>
         <div id="cart-items">
             <div class="cart-item">
-                <img  src="../Resources/Images/product2.png" alt="">
+                <img  src="../Resources/Images/product3.png" alt="">
                 <div id="item-details" style="grid-area: auto;">
                     <img id="exit" src="../Resources/Icons/cross.png" alt="exit" style="width: 20px; height: 20px; margin-left: 90%;">
-                    <h2 style="margin-top: -20px;">$5200</h2>
+                    <h2 style="margin-top: -20px;">Fruit Cake</h2>
+                    <h4>GYD $15 000</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. id.</p>
+                    <p>QTY:      
+                        <select style="margin-left: 20px" title="quantity" name="quantity" id="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">Custom Input</option>
+                        </select>  
+                    </p>
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <img  src="../Resources/Images/product2.png" alt="Christinnnaaaaa">
+                <div id="item-details" style="grid-area: auto;">
+                    <img id="exit" src="../Resources/Icons/cross.png" alt="exit" style="width: 20px; height: 20px; margin-left: 90%;">
+                    <h2 style="margin-top: -20px;">Red Velvet Cake</h2>
+                    <h4>GYD $10 000</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. id.</p>
                     <p>QTY:      
                         <select style="margin-left: 20px" title="quantity" name="quantity" id="quantity">
@@ -157,29 +177,11 @@
             </div>
 
             <div class="cart-item">
-                <img  src="../Resources/Images/product2.png" alt="Christinnnaaaaa">
+                <img  src="../Resources/Images/product1.png" alt="Christinnnaaaaa">
                 <div id="item-details" style="grid-area: auto;">
                     <img id="exit" src="../Resources/Icons/cross.png" alt="exit" style="width: 20px; height: 20px; margin-left: 90%;">
-                    <h2 style="margin-top: -20px;">$5200</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. id.</p>
-                    <p>QTY:      
-                        <select style="margin-left: 20px" title="quantity" name="quantity" id="quantity">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">Custom Input</option>
-                        </select>  
-                    </p>
-                    <button id="checkout-item">Proceed Item to Checkout</button>
-                </div>
-            </div>
-
-            <div class="cart-item">
-                <img  src="../Resources/Images/product2.png" alt="Christinnnaaaaa">
-                <div id="item-details" style="grid-area: auto;">
-                    <img id="exit" src="../Resources/Icons/cross.png" alt="exit" style="width: 20px; height: 20px; margin-left: 90%;">
-                    <h2 style="margin-top: -20px;">$5200</h2>
+                    <h2 style="margin-top: -20px;">Vanilla CupCakes</h2>
+                    <h4>GYD $1 000</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. id.</p>
                     <p>QTY:      
                         <select style="margin-left: 20px" title="quantity" name="quantity" id="quantity">
@@ -197,7 +199,7 @@
         </div>
           <div id="cart-details-container">
             <div id="cart-details">
-                <p style="grid-column: span 2;">Total: $xxxx </p>
+                <p style="grid-column: span 2;">Total: $26 000 </p>
             </div>
             <button id="checkout-btn" type="button" onclick="cartCheckoutTransition(0)">Proceed to checkout</button>
             </div>
@@ -209,46 +211,13 @@
             <div id="progress-bar"></div>
         </div>
 
-        <div class="tab">
-            <!-- <p>Please Input your credit card information: </p> -->
-            <div style="display: flex; flex-direction: row; padding:1em 0 1em 0;">
-                <img id = "card" src="../Resources/Icons/credit-card.png" alt="Master Card">
-                <img id = "card" src="../Resources/Icons/visa.png" alt="Visa">
-                <img id = "card" src="../Resources/Icons/american-express.png" alt="American Express">
-                <img id = "card" src="../Resources/Icons/discover.png" alt="Disover">
-            </div>
-            <p>Card Holder Name*: <input type="text" name="cardHolderName" placeholder="e.g John Doe" ></p>
-            <p>Card Number*: <input type="text" name="cardNumber" placeholder="2342 2424 2424 4244" ></p>
-            <p>Security Pin: <input type="password" inputmode = "numeric" name="securityNumber" placeholder="xxxx" ></p>
-            <p>Expirary Date*: <input type="text" inputmode = "numeric" name="expiraryDate" placeholder="yy/mm/dd" ></p>
-        </div>
-
-        <div class="tab">
-            <p>Full Name*: <input type="text" name="full-name" placeholder="full name" id="full-name" ></p>
-            <p>Email*: <input type="text" name="email" placeholder="email" id="email" ></p>
-            <p>Phone Number (Optional): <input type="number" name="phone=number" placeholder="phone number" id="phone-number" ></p>
-            <p>Address Line 1*: <input type="text" name="address-line-1" placeholder="Address Line 1" id="address-line-1" ></p>
-            <p>Address Line 2*: <input type="text" name="address-line-2" placeholder="Address Line 2" id="address-line-2" ></p>
-            <p>Town/Village (Optional): <input type="text" name="address-line-2" placeholder="Town/Village"></p>
-            <p>Region (Optional): <input list="regions" type="text" inputmode="numeric" name="number" placeholder="Number"></p>
-            <datalist id="regions">
-                <option value="1: Barima-Waini">
-                <option value="2: Pomeroon-Supenaam">
-                <option value="3: Essequibo Islands-West Demerara">
-                <option value="4: Demerara-Mahaica">
-                <option value="5: Mahaica-Berbice">
-                <option value="6: East Berbice-Corentyne">
-                <option value="7: Cuyuni-Mazaruni">
-                <option value="8: Potaro-Siparuni">
-                <option value="9: Upper Takutu-Upper Essequibo">
-                <option value="10: Upper Demerara-Berbice">
-            </datalist>
-        </div>
-
-        <div class="tab" style="width: 50%;">
-            <div>Cart</div>
-            <div id="cart-items">
-                This is where the items will go
+        <div class="tab" style="width: 50%;" id = "cart-review-section" >
+            <h1>Cart</h1>
+            <div id="cart-review">
+                <div>Fruit Cake - GYD $15 000</div>
+                <div>Red Velvet Cake - GYD $15 000</div>
+                <div>Vanilla CupCake - GYD $1 000</div>
+                <h2>Total: GYD $26 000</h2>
             </div>
             <div id="divider"></div>
             <div>
@@ -284,7 +253,43 @@
             </div>
             <div id="divider"></div>
         </div>
-        
+
+        <div class="tab">
+            <!-- <p>Please Input your credit card information: </p> -->
+            <div style="display: flex; flex-direction: row; padding:1em 0 1em 0;">
+                <img id = "card" src="../Resources/Icons/credit-card.png" alt="Master Card">
+                <img id = "card" src="../Resources/Icons/visa.png" alt="Visa">
+                <img id = "card" src="../Resources/Icons/american-express.png" alt="American Express">
+                <img id = "card" src="../Resources/Icons/discover.png" alt="Disover">
+            </div>
+            <p>Card Holder Name*: <input type="text" name="cardHolderName" placeholder="e.g John Doe" ></p>
+            <p>Card Number*: <input type="text" name="cardNumber" placeholder="2342 2424 2424 4244" ></p>
+            <p>Security Pin*: <input type="password" inputmode = "numeric" name="securityNumber" placeholder="xxxx" ></p>
+            <p>Expirary Date*: <input type="text" inputmode = "numeric" name="expiraryDate" placeholder="yy/mm/dd" ></p>
+        </div>
+
+        <div class="tab">
+            <p>Full Name*: <input type="text" name="full-name" placeholder="full name" id="full-name" ></p>
+            <p>Email*: <input type="text" name="email" placeholder="email" id="email" ></p>
+            <p>Phone Number (Optional): <input type="number" name="phone=number" placeholder="phone number" id="phone-number" ></p>
+            <p>Address Line 1*: <input type="text" name="address-line-1" placeholder="Address Line 1" id="address-line-1" ></p>
+            <p>Address Line 2*: <input type="text" name="address-line-2" placeholder="Address Line 2" id="address-line-2" ></p>
+            <p>Town/Village (Optional): <input type="text" name="address-line-2" placeholder="Town/Village"></p>
+            <p>Region (Optional): <input list="regions" type="text" inputmode="numeric" name="number" placeholder="Number"></p>
+            <datalist id="regions">
+                <option value="1: Barima-Waini">
+                <option value="2: Pomeroon-Supenaam">
+                <option value="3: Essequibo Islands-West Demerara">
+                <option value="4: Demerara-Mahaica">
+                <option value="5: Mahaica-Berbice">
+                <option value="6: East Berbice-Corentyne">
+                <option value="7: Cuyuni-Mazaruni">
+                <option value="8: Potaro-Siparuni">
+                <option value="9: Upper Takutu-Upper Essequibo">
+                <option value="10: Upper Demerara-Berbice">
+            </datalist>
+        </div>
+
         <div style="overflow:auto;">
             <div style="display: flex; flex-direction:row; justify-content: center;">
                 <button type="button" id="back-to-cart" onclick="cartCheckoutTransition(1)">Back To Cart</button>

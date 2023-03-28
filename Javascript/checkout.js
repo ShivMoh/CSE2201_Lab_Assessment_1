@@ -46,7 +46,7 @@ function showTab(n) {
     if(n==0) {
         x[currentTab].style.display = "block"
     } else if(currentTab < (x.length - 1) || n < 0) {
-        if(!validateForm(n)) return
+        // if(!validateForm(n)) return
         x[currentTab].style.display = "none"
         currentTab+=n;
         x[currentTab].style.display = "block";
@@ -59,7 +59,7 @@ function showTab(n) {
       document.getElementById("prevBtn").style.display = "none"
       document.getElementById("back-to-cart").style.display = "inline"
     } else {
-      var button = document.getElementById("prevBtn").style.display = "inline"
+      document.getElementById("prevBtn").style.display = "inline"
       document.getElementById("back-to-cart").style.display = "none"
     } 
 
