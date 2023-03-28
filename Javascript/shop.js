@@ -18,7 +18,7 @@ function pageToggle(i) {
     }
 
     document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; 
+    document.documentElement.scrollTop = 0; // for chrome
     page_num+=i
     page_number.innerText = "Page " + page_num + ""
 }
@@ -44,3 +44,20 @@ function randomize() {
 
     }
 }
+
+// var x = 0
+// var y = 0
+// var count = 0
+// var ratings = []
+
+// for(x = 0; x < products.length; x++) {
+//     for(y=0;y<(products[x].children[1].children).length; y++) {
+//         if(products[x].children[1].children[y].classList.contains("checked")) {
+//             count++
+//         }
+//     }
+//     ratings.push(count)
+//     count = 0
+// }
+
+// console.log(products[x].children[1].children[y].classList.contains("checked"))
