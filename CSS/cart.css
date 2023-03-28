@@ -27,3 +27,18 @@ select {
     font-size: medium;
     border: solid grey 1px;
 }
+
+#cart-review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#cart-review-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
