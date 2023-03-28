@@ -5,7 +5,7 @@
 }
 
 body {
-	font-family: Arial, sans-serif;
+	font-family: Open Sans, sans-serif;
 	color: #333
 }
 
@@ -128,7 +128,7 @@ header {
 }
   
 .product-info h2 {
-	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-family: Ubuntu, sans-serif;
 	font-size: 36px;
 	margin-bottom: 21px;
 }
