@@ -18,7 +18,7 @@
         grid-template-rows: auto;
         margin: 0 10em 0 10em;
         justify-content: center;
-        column-gap: 10em;
+        column-gap: 9em;
         
     }
 
@@ -27,12 +27,6 @@
         width: 13em;
         border-radius: 0;
         margin: 0%;
-    }
-
-    button {
-        height: 2.6em;
-        width: 3.5em;
-        margin-left: -0.4em;
     }
 
     .checked {
@@ -44,17 +38,16 @@
         height: 2em;
     }
 
-    .btn {
-        padding: 10px 12px;
-        background-color: #F572A1;
-    }
-
     .product:hover {
         transform: scale(1.01);
     }
 
     .navigation-bar {
         grid-area: 1/1/2/2;
+    }
+
+    .search-container input {
+        width: 20em;
     }
     
 </style>
@@ -64,6 +57,8 @@
             <p id="page-title">Shop</p>
             <p id="page-location">Home > Shop</p>
         </div>
+
+
         <nav class="navigation-bar">
             <div class="menu">
                 <a href="#">Home</a>
@@ -83,6 +78,10 @@
     </header>
 
     <main>
+
+        
+       
+
         <!-- Sorting options and category filters -->
         <section id="filters">
             <div class="filter-div">
@@ -107,7 +106,7 @@
             </div>
             <div class="search-container">
                 <input type="text" placeholder="Search.." name="search">
-                <button type="submit" title="search"><i class="fa fa-search"></i></button>
+                <button type="submit" title="search"><i class="fa fa-search" ></i></button>
             </div>
         </section>
 
@@ -235,14 +234,17 @@
         </section>
 
         <!-- Navigation buttons for different product pages -->
-        <section id="pagination">
-            <button class="btn" id="prev-page">Previous</button>
-            <button class="btn" id="next-page">Next</button>
+        <section style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <div id="pagination">
+                <button class="btn" id="prev-page" onclick="pageToggle(-1)">Previous</button>
+                <button class="btn" id="next-page" onclick="pageToggle(1)">Next</button>
+            </div>
+            <p id="page-num" style="color: black; font-size: large;">Page 1</p>
         </section>
+       
     </main>
 
     <!-- footer -->
-    <!-- Footer -->
     <footer>
         <div id="footer-top">
 

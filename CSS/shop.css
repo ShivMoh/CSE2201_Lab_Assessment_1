@@ -96,18 +96,39 @@ select {
 /*pagination styles*/
 #pagination {
 	text-align: center;
+	margin-top: 5%;
 }
 
-#prev-page, #next-page {
+#prev-page {
+	display: none;
+	background-color: #F572A1;
+	color: white;
+	border: none;
+	border-radius: 5em 1em 1em 5em;
+	padding: 10px 20px;
+	margin: 20px auto;
+	width: 100px;
+	margin-top: 5%;
+}
+
+#next-page {
   display: inline-block;
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
+  background-color: #F572A1;
+  color: white;
   border: none;
-  border-radius: 5px;
+  /* border-radius: 1em 5em 5em 1em; */
+  border-radius: none;
+  padding: 10px 20px;
   margin: 20px auto;
   width: 100px;
+  margin-top: 5%;
 }
+
+#prev-page:hover, #next-page:hover {
+	background-color: #ff8ab5;
+	transform: scale(1.04);
+}
+
 
 
 

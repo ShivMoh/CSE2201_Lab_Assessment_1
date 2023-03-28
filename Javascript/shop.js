@@ -1,11 +1,35 @@
 var products = document.getElementsByClassName("product")
 var sortBy = document.getElementById("sort-by")
 var category =  document.getElementById("category")
+var next_page_btn =  document.getElementById("next-page")
+var prev_page_btn =  document.getElementById("prev-page")
+var page_number = document.getElementById("page-num")
+
+var page_num = 1
+
+function pageToggle(i) {
+    if((page_num + i) == 1) {
+        prev_page_btn.style.display = "none"
+        next_page_btn.style.borderRadius = "1em 1em 1em 1em"
+    } else {
+        prev_page_btn.style.display = "inline"
+        // next_page_btn.style.display = "block"
+        next_page_btn.style.borderRadius = "1em 5em 5em 1em"
+    }
+
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; 
+    page_num+=i
+    page_number.innerText = "Page " + page_num + ""
+}
+
 
 // there's not database to pull data to sort items
 // so this just randomly swaps the items to create some effect 
 // purely for demonstrative reasons
-sortBy.addEventListener('change', () => {
+sortBy.addEventListener('change', randomize())
+
+function randomize() {
     var random = 0;
     var src
     var arr = []
@@ -19,4 +43,4 @@ sortBy.addEventListener('change', () => {
         products[random].children[0].src = src
 
     }
-})
+}
