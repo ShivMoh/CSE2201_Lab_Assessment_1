@@ -1,0 +1,32 @@
+#scroll-to-top {
+  position: fixed;
+  right: 20px;
+  z-index: 9999;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: none;
+  transition: top 0.3s ease-in-out; /* add a transition effect for a smoother animation */
+  top: -60px; /* set the initial position of the button */
+}
+
+#scroll-to-top.show {
+  top: 20px; /* show the button when it has the 'show' class */
+}
+
+#scroll-to-top img {
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin: auto;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
