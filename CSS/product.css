@@ -33,6 +33,7 @@ body {
 .product p {
 	padding-bottom: 10%;
 	padding: auto;
+	font-size: 20px;
 }
 
 .subext {
@@ -42,8 +43,7 @@ body {
 }
 
 .subext h6{
-	font-size: 14px;
-	padding-bottom: 5%;
+	font-size: 18px;
 }
 
 
@@ -73,5 +73,8 @@ body {
 
 .quantity label {
 	margin-right: 5px;
+	font-size: 17px;
+	font-family: Open Sans, sans-serif;
+	font-style: italic;
 }
 
