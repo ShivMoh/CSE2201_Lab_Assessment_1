@@ -72,6 +72,12 @@ header {
   .menu a:hover {
 	color: deeppink;
   }
+
+  .menu img{
+	padding-left: 15px;
+	height: 23px;
+	display: inline;  
+}
   
   @media (max-width: 1210px) {
   .navigation-bar {
