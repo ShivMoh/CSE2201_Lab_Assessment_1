@@ -147,31 +147,23 @@
     </div>
 
   </footer>
-
-  <script>
-    var form = document.getElementById("contact-form")
-    
-    form.addEventListener('submit', (e) => {
-      alert("Your message has been sent!")
-    })
-
-  </script>
-
   
-    <script>
-        function validateForm() {
-            var name = document.forms[0]["name"].value;
-            var email = document.forms[0]["email"].value;
-            var phone = document.forms[0]["phone"].value;
-            var message = document.forms[0]["message"].value;
+  <script>
+    function validateForm() {
+        var name = document.forms[0]["name"].value;
+        var email = document.forms[0]["email"].value;
+        var phone = document.forms[0]["phone"].value;
+        var message = document.forms[0]["message"].value;
 
-            if (name == "" || email == "" || phone == "" || message == "") {
-                alert("Please fill out all fields");
-                return false;
-            }
+        if (name == "" || email == "" || phone == "" || message == "") {
+            alert("Please fill out all fields");
+            return false;
+        }
+        else {
             return true;
         }
+    }
     </script>
-   
+
 </body>
 </html>
