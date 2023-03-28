@@ -27,7 +27,8 @@ function pageToggle(i) {
 // there's not database to pull data to sort items
 // so this just randomly swaps the items to create some effect 
 // purely for demonstrative reasons
-sortBy.addEventListener('change', randomize())
+sortBy.addEventListener('change', randomize)
+category.addEventListener('change', randomize)
 
 function randomize() {
     var random = 0;
