@@ -48,15 +48,15 @@
 
 	<main>
 		<div class="container">
-            <form id="contact-form">
+            <form onsubmit = "return validateForm()" id="contact-form" style = "margin-left: 250px">
                 <label for="name">Name: </label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" placeholder="Enter your name">
                 <label for="email">Email: </label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" placeholder="e.g. cakesrus@gt.com">
                 <label for="phone">Phone Number: </label>
-                <input type="tel" id="phone" name="phone">
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{7}" placeholder="e.g. 5552222">
                 <label for="message">Message: </label>
-                <textarea id="message" name="message"></textarea>
+                <textarea id="message" name="message" placeholder="How can we help you?"></textarea>
                 <button class="btn" type="submit">Submit</button>
             </form>
 			<div class="map">
@@ -150,16 +150,18 @@
 
   
     <script>
-      const contactForm = document.getElementById('contact-form');
-  
-      contactForm.addEventListener('submit', function(event) {
-        event.preventDefault();
-  
-        if (contactForm.checkValidity()) {
-          alert('Submitted successfully');
-          contactForm.reset();
+        function validateForm() {
+            var name = document.forms[0]["name"].value;
+            var email = document.forms[0]["email"].value;
+            var phone = document.forms[0]["phone"].value;
+            var message = document.forms[0]["message"].value;
+
+            if (name == "" || email == "" || phone == "" || message == "") {
+                alert("Please fill out all fields");
+                return false;
+            }
+            return true;
         }
-      });
     </script>
 </body>
 </html>
