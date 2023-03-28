@@ -6,14 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="../CSS/header.css">
     <link rel="stylesheet" href="../CSS/globalStyles.css">
     <link rel="stylesheet" href="../CSS/cart.css">
     <link rel="stylesheet" href="../CSS/checkout.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    
 </head>
 <style>
     #card {
@@ -97,13 +95,25 @@
         font-weight: 300;
     }
 
+    header {
+        height: 10em;
+        background-color: palevioletred;
+    }
+
+    .icons  {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .icons img {
+        margin: 0.7em;
+    }
+
 </style>
 <body>
     <header>
-        <div id="hero">
-            <p id="page-title">Cart</p>
-            <p id="page-location">Home > Cart</p>
-        </div>
         <nav class="navigation-bar">
             <div class="menu">
                 <a href="#">Home</a>
@@ -113,13 +123,13 @@
             <div class="logo">
                 <img src="../Resources/Images/logo.png" alt="Cakes R Us logo">
             </div>
-            <div class="menu">
-                <a href="#">Services</a>
-                <a href="#">Products</a>
-                <a href="#">Blog</a>
+            <div class="icons">
+                <img src="../Resources/Icons/search.png" alt="Search">
+                <img src="../Resources/Icons/cart.png" alt="Cart">
+                <img src="../Resources/Icons/account.png" alt="Profile">
             </div>
         </nav>
-       
+        
     </header>
    
 
@@ -282,9 +292,6 @@
               <button type="button" id="nextBtn" onclick="showTab(1)">Next</button>
             </div>
         </div>
-
-
-     
     </form>
     <script src="../Javascript/checkout.js" defer></script>
 </body>
