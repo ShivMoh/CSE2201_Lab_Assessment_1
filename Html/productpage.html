@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dessert Shop</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Productpage.css">
+</head>
+ 
+<body>
+	<header>
+		<div class="navigation-bar">
+			<div class="menu">
+				<a href="#">Home</a>
+				<a href="#">Shop</a>
+				<a href="#">Contact</a>
+			</div>
+			<div class="logo">
+				<img src="image 39.png" alt="Cakes R Us logo">
+			</div>
+			<div class="menu">
+				<a href="#">Services</a>
+				<a href="#">Products</a>
+				<a href="#">Blog</a>
+			</div>
+		</div>
+	</header>
+
+
+	<main>
+		<section class="products">
+
+			<div class="product">
+				<img src="product1.png" alt="Product 1">
+
+				<div class="product-info">
+					<h2>Lorem Ipsum</h2>
+					<p>Lorem ipsum color sit amet.consectetur adipiscing elit. id.</p>
+					<div class="quantity">
+						<label for="quantity"><em>Qty:</em></label>
+						<select id="quantity" name="quantity">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="custom">Custom</option>
+						</select>
+						<div id="custom-quantity" style="display:none">
+							<label for="custom-quantity"><em>Qty:</em></label>
+							<input style="width: 70px;"type="number" id="custom-quantity" name="custom-quantity" min="2" size="4">
+						</div>
+					</div>
+					<a href="#" class="add-to-cart">Add to Cart</a>
+					<div class="subext">
+						<h6>Category:<span style="font-weight: 500; margin-left: 5px;">ipsum</span></h6> 
+						<h6>Tags:<span style="font-weight: 500; margin-left: 5px;">#lorem #lorem ipsum</span></h6>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script>
+			function showCustomQuantity() {
+			  var quantityDropdown = document.getElementById("quantity");
+			  var customQuantityDiv = document.getElementById("custom-quantity");
+			  if (quantityDropdown.value == "custom") {
+				customQuantityDiv.style.display = "block";
+			  } else {
+				customQuantityDiv.style.display = "none";
+			  }
+			}		  
+			var quantityDropdown = document.getElementById("quantity");
+			quantityDropdown.addEventListener("change", showCustomQuantity);
+		</script>
+	</main>
+
+	<footer>
+		<div class="footer-column">
+		  <h3>Shop</h3>
+		  <ul>
+			<li><a href="#">Whats New</a></li>
+			<li><a href="#">Popular</a></li>
+		  </ul>
+		</div>
+		<div class="footer-column">
+		  <h3>Categories</h3>
+		  <ul>
+			<li><a href="#">Sales</a></li>
+			<li><a href="#">Popular</a></li>
+		  </ul>
+		</div>
+		<div class="footer-column">
+		  <h3>Contact Us</h3>
+		  <ul>
+			<li><a href="#">Leave us a message</a></li>
+		  </ul>
+		</div>
+	  </footer>
+</body>
+</html>
