@@ -35,10 +35,14 @@ select {
     justify-content: center;
 }
 
-#cart-review-section {
+#cart-review-section h1 {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+   
+}
+
+#cart-review-section h5 {
+    width: 100%;
+    text-align: center;
+   
 }

@@ -22,7 +22,7 @@ function update(n) {
     // get computed style inorder to get the current width
     var status = getComputedStyle(element)  
     var fullWidth = parseInt(getComputedStyle(document.getElementById("progress-status")).width) * 0.70
-    var statusIncrement = fullWidth/(x.length - 1)
+    var statusIncrement = fullWidth/(x.length-1)
     var width = parseInt(status.width);
 
     if (width >= fullWidth && n > 0) {
@@ -32,7 +32,6 @@ function update(n) {
             width += statusIncrement
         } else {
             width -= statusIncrement
-            console.log("Did this run")
         }
         
         element.style.width = width; 
@@ -64,7 +63,11 @@ function showTab(n) {
     } 
 
     if (currentTab == (x.length - 1)) {
-      document.getElementById("nextBtn").innerHTML = "Submit";
+      document.getElementById("nextBtn").innerHTML = "Confirm";
+      document.getElementById("nextBtn").onclick = () => {
+        alert("Your purchase has been confirmed. Have a nice day :)")
+        window.location.href = "../Html/shop.html"
+      }
     } else {
       document.getElementById("nextBtn").innerHTML = "Next";
     }
