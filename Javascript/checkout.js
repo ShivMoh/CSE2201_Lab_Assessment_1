@@ -16,17 +16,19 @@ function cartCheckoutTransition(i) {
 
 }
 
+// updates the progress bar
 function update(n) {
     //get dom element
     var element = document.getElementById("progress-bar");
+
     // get computed style inorder to get the current width
     var status = getComputedStyle(element)  
-    var fullWidth = parseInt(getComputedStyle(document.getElementById("progress-status")).width) * 0.70
+    var fullWidth = parseInt(getComputedStyle(document.getElementById("progress-status")).width) 
     var statusIncrement = fullWidth/(x.length-1)
     var width = parseInt(status.width);
 
     if (width >= fullWidth && n > 0) {
-        console.log("Progress bar is full")
+        return
     } else {
         if (n > 0) {
             width += statusIncrement
@@ -45,7 +47,7 @@ function showTab(n) {
     if(n==0) {
         x[currentTab].style.display = "block"
     } else if(currentTab < (x.length - 1) || n < 0) {
-        if(!validateForm(n)) return
+        // if(!validateForm(n)) return
         x[currentTab].style.display = "none"
         currentTab+=n;
         x[currentTab].style.display = "block";
@@ -65,8 +67,8 @@ function showTab(n) {
     if (currentTab == (x.length - 1)) {
       document.getElementById("nextBtn").innerHTML = "Confirm";
       document.getElementById("nextBtn").onclick = () => {
-        alert("Your purchase has been confirmed. Have a nice day :)")
-        window.location.href = "../Html/shop.html"
+          alert("Your purchase has been confirmed. Have a nice day :)")
+          window.location.href = "../Html/shop.html"
       }
     } else {
       document.getElementById("nextBtn").innerHTML = "Next";

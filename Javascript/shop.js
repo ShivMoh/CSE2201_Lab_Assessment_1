@@ -7,29 +7,38 @@ var page_number = document.getElementById("page-num")
 
 var page_num = 1
 
+sortBy.addEventListener('change', randomize)
+category.addEventListener('change', randomize)
+
+// this function toggles through pages on the shop page
+// there's only really one page and its a static site
+// so the content won't actually change
+// only the page number changes
 function pageToggle(i) {
     if((page_num + i) == 1) {
         prev_page_btn.style.display = "none"
         next_page_btn.style.borderRadius = "1em 1em 1em 1em"
     } else {
         prev_page_btn.style.display = "inline"
-        // next_page_btn.style.display = "block"
         next_page_btn.style.borderRadius = "1em 5em 5em 1em"
     }
 
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // for chrome
     page_num+=i
     page_number.innerText = "Page " + page_num + ""
 }
+
+// this function moves the page to the top
+function scrollTop()
+{
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // for chrome
+}
+
 
 
 // there's not database to pull data to sort items
 // so this just randomly swaps the items to create some effect 
 // purely for demonstrative reasons
-sortBy.addEventListener('change', randomize)
-category.addEventListener('change', randomize)
-
 function randomize() {
     var random = 0;
     var src;
@@ -47,19 +56,10 @@ function randomize() {
     }
 }
 
-// var x = 0
-// var y = 0
-// var count = 0
-// var ratings = []
+// searching utilizes randomize to create effect
+// does not actually search, purely for demonstarative purposes
+function search() {
+    randomize()
+    document.getElementsByClassName("search-container")[0].children[0].value = ""
+}
 
-// for(x = 0; x < products.length; x++) {
-//     for(y=0;y<(products[x].children[1].children).length; y++) {
-//         if(products[x].children[1].children[y].classList.contains("checked")) {
-//             count++
-//         }
-//     }
-//     ratings.push(count)
-//     count = 0
-// }
-
-// console.log(products[x].children[1].children[y].classList.contains("checked"))
