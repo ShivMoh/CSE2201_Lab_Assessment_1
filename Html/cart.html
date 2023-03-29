@@ -107,9 +107,16 @@
     }
 
     .navigation-bar {
-  background-color: #EAE1D3;
+         background-color: #EAE1D3;
+    }
 
-}
+    .exit:hover {
+        transform: scale(1.2);
+    }
+
+    .cart-item:hover {
+        transform: scale(1.02);
+    }
 
 </style>
 <body>
@@ -143,9 +150,9 @@
         <p id="cart-items-title">Cart Items</p>
         <div id="cart-items">
             <div class="cart-item">
-                <img  src="../Resources/Images/product3.png" alt="">
-                <div id="item-details" style="grid-area: auto;">
-                    <img id="exit" src="../Resources/Icons/cross.png" alt="exit" style="width: 20px; height: 20px; margin-left: 90%;">
+                <img  src="../Resources/Images/product3.png" alt="product 1">
+                <div id="item-details" style="grid-area: auto;" >
+                    <img class="exit" src="../Resources/Icons/cross.png" alt="exit" style="width: 20px; height: 20px; margin-left: 90%;" data-id="0">
                     <h2 style="margin-top: -20px;">Fruit Cake</h2>
                     <h4>GYD $15 000</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. id.</p>
@@ -162,9 +169,9 @@
             </div>
 
             <div class="cart-item">
-                <img  src="../Resources/Images/product2.png" alt="Christinnnaaaaa">
+                <img  src="../Resources/Images/product2.png" alt="product 2">
                 <div id="item-details" style="grid-area: auto;">
-                    <img id="exit" src="../Resources/Icons/cross.png" alt="exit" style="width: 20px; height: 20px; margin-left: 90%;">
+                    <img class="exit" src="../Resources/Icons/cross.png" alt="exit" style="width: 20px; height: 20px; margin-left: 90%;" data-id="1">
                     <h2 style="margin-top: -20px;">Red Velvet Cake</h2>
                     <h4>GYD $10 000</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. id.</p>
@@ -182,9 +189,9 @@
             </div>
 
             <div class="cart-item">
-                <img  src="../Resources/Images/product1.png" alt="Christinnnaaaaa">
-                <div id="item-details" style="grid-area: auto;">
-                    <img id="exit" src="../Resources/Icons/cross.png" alt="exit" style="width: 20px; height: 20px; margin-left: 90%;">
+                <img  src="../Resources/Images/product1.png" alt="product 3">
+                <div  id="item-details" style="grid-area: auto;">
+                    <img class="exit" src="../Resources/Icons/cross.png" alt="exit" style="width: 20px; height: 20px; margin-left: 90%;" data-id="2">
                     <h2 style="margin-top: -20px;">Vanilla CupCakes</h2>
                     <h4>GYD $1 000</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. id.</p>
@@ -272,6 +279,31 @@
             </div>
         </div>
     </form>
+    <script>
+        // this script helps to make the cart a litte more interactive
+        // get all elements with the "exit" class
+        const exitButtons = document.querySelectorAll('.exit');
+
+        // add click event listener to all "exit" buttons
+        exitButtons.forEach((exitButton) => {
+
+        // this function will essentially allow you to remove a element from the cart
+        // when the exit button is clicked
+        exitButton.addEventListener('click', (event) => {
+            // get the parent element of the "exit" button that has the "items" class
+            const itemElement = event.target.parentNode.parentNode
+            
+            // remove the parent element
+            console.log(itemElement.children[0])
+            itemElement.style.display = "none"
+        });
+        });
+
+
+        // exit_button[x].parentNode.parentNode.style.display = "none"
+            
+       
+    </script>
     <script src="../Javascript/checkout.js" defer></script>
 </body>
 </html>
