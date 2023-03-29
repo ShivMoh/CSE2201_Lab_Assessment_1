@@ -3,6 +3,7 @@ footer {
 }
 
 .banner {
+  font-family: Arial, sans-serif;
   background-image: url('../Resources/Images/banner-background.png');
   background-size: cover;
   background-position: center;
