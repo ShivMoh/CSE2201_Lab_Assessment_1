@@ -12,7 +12,8 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
+  padding-top: 2%;
 }
 
 .banner-column {
