@@ -5,14 +5,17 @@
     <title>Shop - Dessert Shop</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/navigation.css">
     <link rel="stylesheet" href="../CSS/header.css">
     <link rel="stylesheet" href="../CSS/footer.css">
     <link rel="stylesheet" href="../CSS/shop.css">
     <link rel="stylesheet" href="../CSS/scroll-to-top.css">
     <link rel="stylesheet" href="../CSS/globalStyles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:700">
 </head>
 <style>
+
     #filters {
         display: grid;
         grid-template-columns: auto auto auto;
@@ -23,12 +26,7 @@
         
     }
 
-    input {
-        height: 2em;
-        width: 13em;
-        border-radius: 0;
-        margin: 0%;
-    }
+    
 
     .checked {
         color: #F572A1;
@@ -43,23 +41,6 @@
         transform: scale(1.01);
     }
 
-    .navigation-bar {
-        grid-area: 1/1/2/2;
-    }
-
-    .search-container input {
-        width: 20em;
-    }
-
-    .header-search-bar {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .header-search-bar input {
-        width: 17em;
-    }
-    
 </style>
 <body>
     <header>
@@ -82,12 +63,9 @@
             <div class="header-search-bar">
                 <input id="search-bar" type="text" placeholder="Search.." name="search">
                 <img id="search-icon" style = "margin-left: 2%;"src="../Resources/Icons/search.png" alt="search">
-                <!-- <button type="submit" title="search"><i class="fa fa-search" ></i></button> -->
             </div>
             <div class="icons">
-                <!-- <img id="search-icon" src="../Resources/Icons/search.png" alt="Search"> -->
                 <a href="../Html/cart.html"><img src="../Resources/Icons/cart.png" alt="Cart"></a>
-                <!-- <img src="../Resources/Icons/account.png" alt="Profile"> -->
             </div>
         
         </nav>
