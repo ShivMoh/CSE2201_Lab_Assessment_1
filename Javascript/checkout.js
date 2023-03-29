@@ -1,6 +1,7 @@
 var x = document.getElementsByClassName("tab");
-
 var currentTab = 0; // Current tab is set to be the first tab (0)
+
+
 showTab(0); // Display the current tab
 cartCheckoutTransition(1);
 
