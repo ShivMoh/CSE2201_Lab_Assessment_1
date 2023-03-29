@@ -10,11 +10,18 @@ input {
 }
 
 button {
-	background-color: #333;
+  background-color: #F572A1;
+  border: none;
+  margin-top: 1em;
 	color: #fff;
 	padding: 10px 20px;
 	border-radius: 5px;
 	text-decoration: none;
+}
+
+button:hover {
+  background-color: #ff8ab5;
+  transform: scale(1.04);
 }
 
 * {

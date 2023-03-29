@@ -45,7 +45,7 @@ function showTab(n) {
     if(n==0) {
         x[currentTab].style.display = "block"
     } else if(currentTab < (x.length - 1) || n < 0) {
-        // if(!validateForm(n)) return
+        if(!validateForm(n)) return
         x[currentTab].style.display = "none"
         currentTab+=n;
         x[currentTab].style.display = "block";
