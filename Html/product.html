@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../CSS/product.css">
     <link rel="stylesheet" href="../CSS/footer.css">
     <link rel="stylesheet" href="../CSS/globalStyles.css">
+    <link rel="stylesheet" href="../CSS/scroll-to-top.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 </head>
@@ -59,15 +60,19 @@
             
             <div class="header-search-bar">
                 <input id="search-bar" type="text" placeholder="Search.." name="search">
-                <img id="search-icon" style = "margin-left: 2%;"src="../Resources/Icons/search.png" alt="search">
-                <!-- <button type="submit" title="search"><i class="fa fa-search" ></i></button> -->
+                <img onclick="reload() "search-icon" style = "margin-left: 2%;"src="../Resources/Icons/search.png" alt="search">
             </div>
             <div class="icons">
                 <a href="../Html/cart.html"><img src="../Resources/Icons/cart.png" alt="Cart"></a>
             </div>
         
         </nav>
-      
+
+        <div>
+            <button id="scroll-to-top" class="circle">
+              <img src="../Resources/Icons/scroll-up.jpg" alt="scroll-to-top">
+            </button>
+        </div>
        
     </header>
 
@@ -212,6 +217,7 @@
         </div>
 
     </footer>
+    <script src="../Javascript/scroll-to-top-button.js"></script>
 
 
 </body>

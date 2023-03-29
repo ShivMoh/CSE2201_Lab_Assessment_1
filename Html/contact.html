@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../CSS/contact.css">
     <link rel="stylesheet" href="../CSS/footer.css">
     <link rel="stylesheet" href="../CSS/globalStyles.css">
+    <link rel="stylesheet" href="../CSS/scroll-to-top.css">
 </head>
 <style>
     .container input {
@@ -30,12 +31,14 @@
 
 </style>
 <body>
-  <header>
-    <div id="hero">
-        <p id="page-title">Contact Us</p>
-        <p id="page-location">Home > Contact</p>
-    </div>
-    <nav class="navigation-bar">
+    <header>
+        <div id="hero">
+            <p id="page-title">Shop</p>
+            <p id="page-location">Home > Shop</p>
+        </div>
+
+
+        <nav class="navigation-bar">
             <div class="menu">
                 <a href="../Html/home.html">Home</a>
                 <a href="../Html/shop.html">Shop</a>
@@ -47,15 +50,21 @@
             
             <div class="header-search-bar">
                 <input id="search-bar" type="text" placeholder="Search.." name="search">
-                <img id="search-icon" style = "margin-left: 2%;"src="../Resources/Icons/search.png" alt="search">
-                <!-- <button type="submit" title="search"><i class="fa fa-search" ></i></button> -->
+                <img onclick="reload() "search-icon" style = "margin-left: 2%;"src="../Resources/Icons/search.png" alt="search">
             </div>
             <div class="icons">
                 <a href="../Html/cart.html"><img src="../Resources/Icons/cart.png" alt="Cart"></a>
             </div>
         
         </nav>
-  </header>
+
+        <div>
+            <button id="scroll-to-top" class="circle">
+              <img src="../Resources/Icons/scroll-up.jpg" alt="scroll-to-top">
+            </button>
+        </div>
+       
+    </header>
 
 	<main>
 		<div class="container">
@@ -175,6 +184,8 @@
         }
     }
     </script>
+    <script src="../Javascript/scroll-to-top-button.js" defer></script>
+
 
 </body>
 </html>

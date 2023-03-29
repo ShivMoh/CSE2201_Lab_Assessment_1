@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../CSS/cart.css">
     <link rel="stylesheet" href="../CSS/checkout.css">
     <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/scroll-to-top.css">
     
 </head>
 <style>
@@ -133,15 +134,20 @@
             
             <div class="header-search-bar">
                 <input id="search-bar" type="text" placeholder="Search.." name="search">
-                <img id="search-icon" style = "margin-left: 2%;"src="../Resources/Icons/search.png" alt="search">
-                <!-- <button type="submit" title="search"><i class="fa fa-search" ></i></button> -->
+                <img onclick="reload() "search-icon" style = "margin-left: 2%;"src="../Resources/Icons/search.png" alt="search">
             </div>
             <div class="icons">
                 <a href="../Html/cart.html"><img src="../Resources/Icons/cart.png" alt="Cart"></a>
             </div>
         
         </nav>
-        
+
+        <div>
+            <button id="scroll-to-top" class="circle">
+              <img src="../Resources/Icons/scroll-up.jpg" alt="scroll-to-top">
+            </button>
+        </div>
+       
     </header>
    
 
@@ -279,32 +285,7 @@
             </div>
         </div>
     </form>
-    <!-- <script>
-
-        // this script helps to make the cart a litte more interactive
-        // get all elements with the "exit" class
-        const exitButtons = document.querySelectorAll('.exit');
-
-        // add click event listener to all "exit" buttons
-        exitButtons.forEach((exitButton) => {
-
-        // this function will essentially allow you to remove a element from the cart
-        // when the exit button is clicked
-        exitButton.addEventListener('click', (event) => {
-            // get the parent element of the "exit" button that has the "items" class
-            const itemElement = event.target.parentNode.parentNode
-            
-            // remove the parent element
-            console.log(itemElement.children[0])
-            itemElement.style.display = "none"
-        });
-        });
-
-
-        // exit_button[x].parentNode.parentNode.style.display = "none"
-            
-       
-    </script> -->
+    <script src="../Javascript/scroll-to-top-button.js" defer></script>
     <script src="../Javascript/checkout.js" defer></script>
 </body>
 </html>
