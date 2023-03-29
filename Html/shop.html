@@ -341,6 +341,17 @@
         function reload() {
             window.location.reload()
         }
+
+        // get products
+        var products = document.querySelectorAll(".product")
+
+        // goes to the static product page when a product is clicked
+        products.forEach((product) => {
+                product.addEventListener('click', (event) => {
+                    window.location.href = "../Html/product.html"
+                });
+            });
+
     </script>
     <script src="../Javascript/shop.js" defer></script>
     <script src="../Javascript/scroll-to-top-button.js" defer></script>
