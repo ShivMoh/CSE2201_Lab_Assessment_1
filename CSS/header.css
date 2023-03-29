@@ -122,9 +122,12 @@
 } 
 
 
-.icons img {
+.icons a img {
 	width: 50%;
 	height: 50%;
 	margin: 0 0.5em 0 2em;
 }
 
+.icons a img:hover {
+	transform: scale(1.02);
+}
