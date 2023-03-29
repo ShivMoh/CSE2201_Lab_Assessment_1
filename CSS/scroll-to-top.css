@@ -7,7 +7,7 @@
   cursor: pointer;
   background-color: none;
   transition: top 0.3s ease-in-out; /* add a transition effect for a smoother animation */
-  top: -60px; /* set the initial position of the button */
+  top: -20%; /* set the initial position of the button */
 }
 
 #scroll-to-top.show {

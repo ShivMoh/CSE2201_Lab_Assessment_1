@@ -36,18 +36,17 @@ input.invalid {
 button {
     width: 120px;
     height: 30px;
-    background-color: #29D53A;
     border: none;
     border-radius: 10px;
     margin: 10px;
 }
 
-#prevBtn:hover, #nextBtn:hover {
+/* #prevBtn:hover, #nextBtn:hover {
 
     background-color: #4abb55;
     transform: scale(1.02);
     color: white;
-}
+} */
   
 #progress-bar {
   width: 33%;
