@@ -5,7 +5,7 @@
     <title>Shop - Dessert Shop</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/navigation.css">
     <link rel="stylesheet" href="../CSS/product.css">
     <link rel="stylesheet" href="../CSS/footer.css">
     <link rel="stylesheet" href="../CSS/globalStyles.css">
@@ -24,6 +24,15 @@
         margin-bottom: -4%;
 
     }
+
+    .logo img {
+        border: 12px solid #F78CB2;
+    }
+
+    .navigation-bar {
+  background-color: #EAE1D3;
+
+}
 </style>
 <body>
     <header>
@@ -36,11 +45,16 @@
             <div class="logo">
                 <img src="../Resources/Images/logo.png" alt="Cakes R Us logo">
             </div>
-            <div class="icons">
-                <img src="../Resources/Icons/search.png" alt="Search">
-                <img src="../Resources/Icons/cart.png" alt="Cart">
-                <img src="../Resources/Icons/account.png" alt="Profile">
+            
+            <div class="header-search-bar">
+                <input id="search-bar" type="text" placeholder="Search.." name="search">
+                <img id="search-icon" style = "margin-left: 2%;"src="../Resources/Icons/search.png" alt="search">
+                <!-- <button type="submit" title="search"><i class="fa fa-search" ></i></button> -->
             </div>
+            <div class="icons">
+                <a href="../Html/cart.html"><img src="../Resources/Icons/cart.png" alt="Cart"></a>
+            </div>
+        
         </nav>
       
        
