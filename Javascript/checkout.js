@@ -1,10 +1,10 @@
 var x = document.getElementsByClassName("tab");
 var currentTab = 0; // Current tab is set to be the first tab (0)
 
-
 showTab(0); // Display the current tab
-cartCheckoutTransition(1);
+cartCheckoutTransition(1); 
 
+// transitions between the cart and checkout content
 function cartCheckoutTransition(i) {
 
   if(i == 1) {
@@ -18,6 +18,9 @@ function cartCheckoutTransition(i) {
 }
 
 // updates the progress bar
+// the unmodified version of this code was sourced from w3schools. 
+// code was altered and modified for use in project
+// W3Schools. (n.d.). W3.CSS Progress Bars. Retrieved March 29, 2023, from https://www.w3schools.com/w3css/w3css_progressbar.asp
 function update(n) {
     //get dom element
     var element = document.getElementById("progress-bar");
@@ -41,8 +44,9 @@ function update(n) {
     }
   }
 
-
-  
+// the unmodified version of this code was sourced from w3schools. 
+// code was altered and modified for use in project
+// W3Schools. (n.d.). How To Create a Form With Multiple Steps. Retrieved March 29, 2023, from https://www.w3schools.com/howto/howto_js_form_steps.asp
 function showTab(n) {
     // This function will display the specified tab of the form ...
     if(n==0) {
@@ -56,7 +60,7 @@ function showTab(n) {
         return;
     }
 
-    // ... and fix the Previous/Next buttons:
+    // changes button text appropriately to suite the current stage of the form
     if (currentTab == 0) {
       document.getElementById("prevBtn").style.display = "none"
       document.getElementById("back-to-cart").style.display = "inline"
@@ -65,6 +69,7 @@ function showTab(n) {
       document.getElementById("back-to-cart").style.display = "none"
     } 
 
+    // this handles the final confirm (submit) button
     if (currentTab == (x.length - 1)) {
       document.getElementById("nextBtn").innerHTML = "Confirm";
       document.getElementById("nextBtn").onclick = () => {
@@ -75,7 +80,10 @@ function showTab(n) {
       document.getElementById("nextBtn").innerHTML = "Next";
     }
 
+    // updates the progress bar
     update(n)
+
+    // changes title of form appropriately 
     titleChange(currentTab)
 
   }
@@ -111,7 +119,7 @@ function validateForm(n) {
         }
     } 
 
-    // if form is valid, we'll remove any "invalid" classes added before proceeding
+    // checks for required fields and adds invalid if not filled
     if(valid) {
         for (i = 0; i < y.length; i++) {
             if((y[i].innerText).includes("*")) {
@@ -122,13 +130,3 @@ function validateForm(n) {
 
     return valid; // return the valid status
   }
-
-// function fixStepIndicator(n) {
-//     // This function removes the "active" class of all steps...
-//     var i, x = document.getElementsByClassName("step");
-//     for (i = 0; i < x.length; i++) {
-//       x[i].className = x[i].className.replace(" active", "");
-//     }
-//     //... and adds the "active" class to the current step:
-//     x[n].className += " active";
-//   }

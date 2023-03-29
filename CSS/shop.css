@@ -7,10 +7,6 @@ header {
 	grid-template-rows: auto auto auto;
 }
 
-.btn:hover {
-	background-color: #555;
-}
-
 /*product styles*/
 .products {
 	display: grid;
@@ -66,7 +62,7 @@ select {
 	padding: 0 10px 0 10px;
 }
 
-/*pagination styles*/
+/*page navigation styles*/
 #pagination {
 	text-align: center;
 	margin-top: 5%;

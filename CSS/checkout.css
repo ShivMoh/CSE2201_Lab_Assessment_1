@@ -40,13 +40,6 @@ button {
     border-radius: 10px;
     margin: 10px;
 }
-
-/* #prevBtn:hover, #nextBtn:hover {
-
-    background-color: #4abb55;
-    transform: scale(1.02);
-    color: white;
-} */
   
 #progress-bar {
   width: 33%;
