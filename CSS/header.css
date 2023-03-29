@@ -31,8 +31,6 @@
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    position: relative;
-	left: -5em;
     z-index: 1;
   }
   
@@ -123,8 +121,10 @@
 	top: -10em;
 } 
 
+
 .icons img {
-	width: 20%;
-	height: 20%;
-	margin: 0 0.5em 0 0.5em;
+	width: 50%;
+	height: 50%;
+	margin: 0 0.5em 0 2em;
 }
+

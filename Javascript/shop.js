@@ -32,14 +32,11 @@ category.addEventListener('change', randomize)
 
 function randomize() {
     var random = 0;
-    var src
-    var name
-    var arr = []
-    var arr2 = []
+    var src;
+    var name;
+    
     for(var x = 0; x < products.length; x++) {
         random = Math.floor(Math.random() * products.length);
-        arr.push(x)
-        arr2.push(random)
         src = products[x].children[0].src
         name = products[x].children[2].innerText
         products[x].children[0].src = products[random].children[0].src
