@@ -24,7 +24,9 @@ label {
     margin-bottom: 0.5em;
 }
 
-
+header {
+    margin-bottom: 5em;
+}
 
 .container {
     width: 100%;

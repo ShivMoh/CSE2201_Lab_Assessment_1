@@ -100,16 +100,16 @@
         background-color: palevioletred;
     }
 
-    .icons  {
-        display: flex;
-        flex-direction: row;
-        justify-content: end;
-        align-items: center;
+
+
+        .logo img {
+        border: 12px solid #F78CB2;
     }
 
-    .icons img {
-        margin: 0.7em;
-    }
+    .navigation-bar {
+  background-color: #EAE1D3;
+
+}
 
 </style>
 <body>
@@ -123,11 +123,16 @@
             <div class="logo">
                 <img src="../Resources/Images/logo.png" alt="Cakes R Us logo">
             </div>
-            <div class="icons">
-                <img src="../Resources/Icons/search.png" alt="Search">
-                <img src="../Resources/Icons/cart.png" alt="Cart">
-                <img src="../Resources/Icons/account.png" alt="Profile">
+            
+            <div class="header-search-bar">
+                <input id="search-bar" type="text" placeholder="Search.." name="search">
+                <img id="search-icon" style = "margin-left: 2%;"src="../Resources/Icons/search.png" alt="search">
+                <!-- <button type="submit" title="search"><i class="fa fa-search" ></i></button> -->
             </div>
+            <div class="icons">
+                <a href="../Html/cart.html"><img src="../Resources/Icons/cart.png" alt="Cart"></a>
+            </div>
+        
         </nav>
         
     </header>

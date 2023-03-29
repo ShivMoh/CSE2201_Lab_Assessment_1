@@ -12,6 +12,15 @@
     <link rel="stylesheet" href="../CSS/globalStyles.css">
     
   </head>
+  <style>
+    .logo img {
+      border: 12px solid white;
+    }
+
+    .navigation-bar {
+      background-color: rgba(234,225,211,0.7);
+    }
+  </style>
   <body>
     <section id="header">
       <header>
@@ -37,11 +46,14 @@
           <div class="logo">
             <img src="../Resources/Images/logo.jpg" alt="Cakes R Us logo">
           </div>
-          <div class="icons">
-              <img src="../Resources/Icons/search.png" alt="Search">
-              <img src="../Resources/Icons/cart.png" alt="Cart">
-              <img src="../Resources/Icons/account.png" alt="Profile">
-          </div>
+          <div class="header-search-bar">
+                <input id="search-bar" type="text" placeholder="Search.." name="search">
+                <img id="search-icon" style = "margin-left: 2%;"src="../Resources/Icons/search.png" alt="search">
+            </div>
+            <div class="icons">
+                <a href="../Html/cart.html"><img src="../Resources/Icons/cart.png" alt="Cart"></a>
+            </div>
+
         </div>
         <div>
           <button id="scroll-to-top" class="circle">
