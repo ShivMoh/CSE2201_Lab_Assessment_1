@@ -100,3 +100,7 @@ footer {
 .footer-bottom {
     padding-left: 160px;
 }
+
+footer li {
+  list-style-type: none;
+}
