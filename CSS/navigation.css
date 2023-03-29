@@ -104,10 +104,7 @@
 
 .header-search-bar input {
     width: 17em;
+    margin-right: 5%;
 }
 
-input {
-    height: 2em;
-    width: 13em;
-}
     
