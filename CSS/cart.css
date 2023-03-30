@@ -1,9 +1,12 @@
 #divider {
+    /* Applies a solid border at the bottom and adds padding to the element with the ID "divider" */
     border-bottom: solid #3f3d3d 1px;
     padding: 3%;
 }
 
 .cart-item  img {
+    /* Styles all images inside elements with the class "cart-item" */
+    /* Sets the width and height of images, background color, and border radius */
     width: 20em;
     height: 20em;
     background-color: red;
@@ -11,6 +14,8 @@
 }
 
 .cart-item {
+    /* Styles all elements with the class "cart-item" */
+    /* Sets the width, display, grid template columns, column gap, margin bottom, background color, border radius, and padding */
     width: 60%;
     display: grid;
     grid-template-columns: 2em auto;
@@ -22,6 +27,8 @@
 }
 
 select {
+    /* Styles all select elements */
+    /* Sets the width, border radius, font size, and border */
     width: 50px;
     border-radius: 0.5em;
     font-size: medium;
@@ -29,6 +36,8 @@ select {
 }
 
 #cart-review {
+    /* Styles the element with the ID "cart-review" */
+    /* Sets the display property, flex direction, and aligns and justifies the items */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,12 +45,16 @@ select {
 }
 
 #cart-review-section h1 {
+    /* Styles all h1 elements inside the element with the ID "cart-review-section" */
+    /* Sets the width and centers the text horizontally */
     width: 100%;
     text-align: center;
    
 }
 
 #cart-review-section h5 {
+    /* Styles all h5 elements inside the element with the ID "cart-review-section" */
+    /* Sets the width and centers the text horizontally */
     width: 100%;
     text-align: center;
    
