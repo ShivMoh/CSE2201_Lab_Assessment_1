@@ -2,22 +2,26 @@
 <html>
 
 <head>
+    <!-- Set the title of the webpage -->
     <title>Shop - Dessert Shop</title>
+    <!-- Define character encoding and viewport for mobile devices -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import CSS files for navigation, header, footer, and shop page -->
     <link rel="stylesheet" href="../CSS/navigation.css">
     <link rel="stylesheet" href="../CSS/header.css">
     <link rel="stylesheet" href="../CSS/footer.css">
     <link rel="stylesheet" href="../CSS/shop.css">
     <link rel="stylesheet" href="../CSS/scroll-to-top.css">
     <link rel="stylesheet" href="../CSS/globalStyles.css">
+    <!-- Import external fonts and icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:700">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
 </head>
 <style>
-
+    /* Style the product filters */
     #filters {
         display: grid;
         grid-template-columns: auto auto auto;
@@ -28,22 +32,23 @@
         
     }
 
-    
-
+    /* Set the color for checked stars */
     .checked {
         color: #F572A1;
     }
 
+    /* Set the size of stars */
     .fa-star {
         width: 2em;
         height: 2em;
     }
 
+    /* Add an animation when hovering over products */
     .product:hover {
         transform: scale(1.01);
     }
 
-    
+    /* Style the input fields for filters */
     #filters input {
         height: 2em;
         width: 17em;
@@ -53,12 +58,13 @@
 </style>
 <body>
     <header>
+         <!-- Create hero section with page title and location -->
         <div id="hero">
             <p id="page-title">Shop</p>
             <p id="page-location">Home > Shop</p>
         </div>
 
-
+        <!-- Define navigation bar with menu, logo, search bar, and cart icon -->
         <nav class="navigation-bar">
             <div class="menu">
                 <a href="../Html/home.html">Home</a>
@@ -79,6 +85,7 @@
         
         </nav>
 
+        <!-- Add a button to scroll to the top of the page -->
         <div>
             <button id="scroll-to-top" class="circle">
               <img src="../Resources/Icons/scroll-up.jpg" alt="scroll-to-top">
@@ -88,10 +95,6 @@
     </header>
 
     <main>
-
-        
-       
-
         <!-- Sorting options and category filters -->
         <section id="filters">
             <div class="filter-div">
