@@ -1,8 +1,10 @@
+/*body styles*/
 body {
 	font-family: Open Sans, sans-serif;
 	color: #333
 }
 
+/*product styles*/
 .product {
 	background-color: #fff;
 	display: flex;

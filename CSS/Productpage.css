@@ -1,8 +1,10 @@
+/*body styles*/
 body {
 	font-family: Open Sans, sans-serif;
 	color: #333
 }
 
+/*header styles*/
 header {
 	position: relative;
 	background-color: #f572a1;
@@ -11,6 +13,7 @@ header {
 	width: auto;
 }
 
+/*navigation bar styles*/
 .navigation-bar a {
 	color: black;
 	text-decoration: none;
@@ -20,7 +23,8 @@ header {
 	display: inline-block;
   
   }
-  
+
+  /*logo styles*/
 .logo {
 	display: flex;
 	justify-content: center;
@@ -39,7 +43,8 @@ header {
 	border-radius: 50%;
 	border: 12px solid white;
   }
-   
+
+  /*menu styles*/
 .menu {
 	display: flex;
 	font-family: 'Playfair Display', serif;
@@ -84,8 +89,7 @@ header {
 	padding: 25%;
   }
   
-
-
+/*product styles*/
 .product {
 	background-color: #fff;
 	display: flex;
@@ -158,6 +162,7 @@ header {
 	margin-right: 5px;
 }
 
+/*footer styles*/
 footer {
 	background-color: #CD4274;
 	text-align: center;

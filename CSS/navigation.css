@@ -1,4 +1,4 @@
-
+/*nav bar styles*/
 .navigation-bar {
   display: flex;
   flex-wrap: wrap;
@@ -24,7 +24,7 @@
   display: inline-block;
 
 }
-
+/*logo styles*/
 .logo {
   display: flex;
   justify-content: center;
@@ -32,8 +32,6 @@
   flex-grow: 1;
   z-index: 1;
 }
-
-
 
 .logo img {
   position: absolute;
@@ -44,6 +42,7 @@
   border-radius: 50%;
 }
 
+/*menu and header related styles*/
 .menu {
   display: flex;
   flex-wrap: wrap;
