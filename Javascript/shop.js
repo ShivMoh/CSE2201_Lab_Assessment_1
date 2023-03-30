@@ -36,7 +36,7 @@ function scrollTop()
 
 
 
-// there's not database to pull data to sort items
+// there's no database to pull data to sort items
 // so this just randomly swaps the items to create some effect 
 // purely for demonstrative reasons
 function randomize() {
