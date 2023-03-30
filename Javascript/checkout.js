@@ -48,7 +48,7 @@ function update(n) {
 // code was altered and modified for use in project
 // W3Schools. (n.d.). How To Create a Form With Multiple Steps. Retrieved March 29, 2023, from https://www.w3schools.com/howto/howto_js_form_steps.asp
 function showTab(n) {
-    // This function will display the specified tab of the form ...
+    // This function will display the specified tab of the form
     if(n==0) {
         x[currentTab].style.display = "block"
     } else if(currentTab < (x.length - 1) || n < 0) {
@@ -60,7 +60,7 @@ function showTab(n) {
         return;
     }
 
-    // changes button text appropriately to suite the current stage of the form
+    // changes button text appropriately to suit the current stage of the form
     if (currentTab == 0) {
       document.getElementById("prevBtn").style.display = "none"
       document.getElementById("back-to-cart").style.display = "inline"
