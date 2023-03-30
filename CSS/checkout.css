@@ -1,18 +1,25 @@
 #cart {
+    /* Hides the element with the ID "cart" */
     display: none;
 }
+
 #checkout {
+    /* Hides the element with the ID "checkout" */
+    /* Sets the background color, margin and display properties */
     display: none;
     background-color: #ffffff;
     margin: 0px auto;
 }
 
 p {
+    /* Sets the font family and font size for all paragraph elements */
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
 }
 
 input {
+    /* Styles all input elements */
+    /* Sets the height, margin, padding, width, font size, font family, border, and border radius */
     height: 5%;
     margin-top: 3px;
     padding: 10px;
@@ -24,16 +31,22 @@ input {
 }
 
 input.invalid {
+    /* Styles input elements with the class "invalid" */
+    /* Sets the background color to red */
     background-color: #ffdddd;
 }
 
 .tab {
+    /* Styles all elements with the class "tab" */
+    /* Hides the element and sets the width and margin */
     display: none;
     width: 30%;
     margin: 0px auto;
 }
 
 button {
+    /* Styles all button elements */
+    /* Sets the width, height, border, and border radius */
     width: 120px;
     height: 30px;
     border: none;
@@ -42,18 +55,22 @@ button {
 }
   
 #progress-bar {
-  width: 33%;
-  height: 35px;
-  background-color: #4abb55;
-  text-align: center;
-  line-height: 32px;
-  color: black;
-  border-radius: 1em;
-  height: 1.5em;
-  text-align: center;
+    /* Styles the element with the ID "progress-bar" */
+    /* Sets the width, height, background color, text alignment, line height, color, and border radius */
+    width: 33%;
+    height: 35px;
+    background-color: #4abb55;
+    text-align: center;
+    line-height: 32px;
+    color: black;
+    border-radius: 1em;
+    height: 1.5em;
+    text-align: center;
 }
 
 #progress-status {
+    /* Styles the element with the ID "progress-status" */
+    /* Sets the width, margin, background color, and border radius */
     width: 30%;
     margin: 0px auto;
     background-color: #d31f1f;
@@ -62,6 +79,8 @@ button {
 }
 
 #form-title {
+    /* Styles the element with the ID "form-title" */
+    /* Sets the width, margin, font size, text alignment, and padding */
     width: 30%;
     margin: 0px auto;
     font-size: 2em;

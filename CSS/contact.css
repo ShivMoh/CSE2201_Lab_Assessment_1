@@ -1,5 +1,5 @@
-
 #contact-form {
+    /*Allows the contact forms elements to have flexible dimesions*/
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -7,10 +7,10 @@
     position: relative;
     left: 10em;
     top: -4em;
-  
 }
 
 textarea {
+    /*Styles the textarea to use the Raleway font family and have a solid banner*/
     width: 25em;
     height: 5em;
     border: solid #aaaaaa 1px;
@@ -21,22 +21,25 @@ textarea {
 }
 
 label {
+    /*Adjust the margin area below the label element*/
     margin-bottom: 0.5em;
 }
 
 header {
+    /*Adjust the margin area below the header element*/
     margin-bottom: 5em;
 }
 
 .container {
+    /*Allows the container content to be layed out in rows and columns*/
     width: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
-    /* justify-content: center; */
 }
 
 .map {
+    /*Modify the width and height of map*/
     width: 100%;
     height: 50em;
 }
